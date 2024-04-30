@@ -6,8 +6,17 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:08:33 by hurabe            #+#    #+#             */
-/*   Updated: 2024/04/23 15:11:16 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/04/30 18:56:18 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	ft_toupper(int c)
+{
+	if (c >= 'a' && c <= 'z')
+	{
+		return (c - 32);
+	}
+	return (c);
+}
