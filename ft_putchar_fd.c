@@ -6,8 +6,13 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:22 by hurabe            #+#    #+#             */
-/*   Updated: 2024/04/23 15:10:30 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/01 16:52:22 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
