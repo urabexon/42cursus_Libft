@@ -6,8 +6,14 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:36 by hurabe            #+#    #+#             */
-/*   Updated: 2024/04/23 15:10:37 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/01 17:34:15 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
+{
+	while (*s)
+		write(fd, &*(s++), 1);
+}
