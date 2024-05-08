@@ -6,8 +6,13 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:40 by hurabe            #+#    #+#             */
-/*   Updated: 2024/04/23 15:10:39 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/08 17:39:59 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char	**ft_split(char const *s, char c)
+{
+	
+}

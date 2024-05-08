@@ -6,8 +6,13 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:17 by hurabe            #+#    #+#             */
-/*   Updated: 2024/04/23 15:10:25 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/08 17:38:52 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	*ft_memmove(void *dst, const void *src, size_t len)
+{
+
+}

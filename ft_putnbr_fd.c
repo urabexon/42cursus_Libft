@@ -6,8 +6,13 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:29 by hurabe            #+#    #+#             */
-/*   Updated: 2024/04/23 15:10:35 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/08 17:39:45 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putnbr_fd(int n, int fd)
+{
+	
+}

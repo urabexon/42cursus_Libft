@@ -6,8 +6,13 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:14 by hurabe            #+#    #+#             */
-/*   Updated: 2024/04/23 15:10:22 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/08 17:38:37 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	
+}
