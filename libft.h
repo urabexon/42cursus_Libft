@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:08:36 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/08 22:36:44 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/15 16:58:16 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 # define LIBFT_H
 
 //include
-#include <unistd.h>
-#include <stdlib.h>
-#include <limits.h>
-#include <stdbool.h>
-#include <stdio.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <limits.h>
+# include <stdbool.h>
+# include <stdio.h>
 
 //prototype
 int		ft_atoi(char *str);

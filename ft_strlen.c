@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:08:07 by hurabe            #+#    #+#             */
-/*   Updated: 2024/04/24 19:22:50 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/15 16:56:14 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (t);
 }
-
-// int main() {
-//     char *strings[] = {"", "Hello, world!", "Another test string"};
-//     for (int i = 0; i < 3; i++) {
-//         printf("Length of '%s' is %zu.\n", strings[i], ft_strlen(strings[i]));
-//     }
-//     return 0;
-// }

@@ -6,7 +6,7 @@
 #    By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 13:08:39 by hurabe            #+#    #+#              #
-#    Updated: 2024/05/15 14:11:13 by hurabe           ###   ########.fr        #
+#    Updated: 2024/05/15 16:58:57 by hurabe           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ RM		= rm -f
 CFLAGS	= -Wall -Wextra -Werror
 
 # %.o:%.c
-	$(CC) $(CFLAGS) -c $< -o $@
+# 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)

@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:08:11 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/15 16:44:00 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/15 17:00:27 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		result[i] = f(i, s[i]);
 		i++;
 	}
-	result[i] = '/0';
+	result[i] = '\0';
 	return (result);
 }
