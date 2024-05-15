@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:52 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/15 16:32:34 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/15 17:01:41 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	if (!s || !f)
 		return ;
 	i = 0;
-	while (s[i] != '/0')
+	while (s[i] != '\0')
 	{
 		(*f)(i, &s[i]);
 		i++;
