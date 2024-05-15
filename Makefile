@@ -6,7 +6,7 @@
 #    By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 13:08:39 by hurabe            #+#    #+#              #
-#    Updated: 2024/05/10 18:29:47 by hurabe           ###   ########.fr        #
+#    Updated: 2024/05/15 14:11:13 by hurabe           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRCS	= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 		ft_strmapi.c ft_striteri.c ft_putchar_fd.c \
 		ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 		
-SRCS_BONUS	=	ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
+# SRCS_BONUS	=	ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 # SRCS    = $(wildcard ft_*.c)
 
 OBJS	= $(SRCS:.c=.o)
@@ -33,15 +33,15 @@ RM		= rm -f
 
 CFLAGS	= -Wall -Wextra -Werror
 
-%.o:%.c
+# %.o:%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-bonus: $(OBJS_BONUS)
-	touch bonus
-	ar rcs $(NAME) $(OBJS_BONUS)
+# bonus: $(OBJS_BONUS)
+# 	touch bonus
+# 	ar rcs $(NAME) $(OBJS_BONUS)
 
 all: $(NAME)
 
