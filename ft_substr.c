@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:08:26 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/17 19:42:20 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/17 22:06:02 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,18 +22,21 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	sub_len = ft_strlen(s);
 	if (sub_len <= start)
-		return ((char *)malloc(1));
+	{
+		substr = (char *)malloc(1);
+		if (substr == NULL)
+			return (NULL);
+		substr[0] = '\0';
+		return (substr);
+	}
 	if (sub_len < start + len)
 		len = sub_len - start;
 	substr = (char *)malloc((len + 1) * sizeof(char));
 	if (!substr)
 		return (NULL);
-	i = 0;
-	while (i < len && s[start + i])
-	{
+	i = -1;
+	while (++i < len && s[start + i])
 		substr[i] = s[start + i];
-		i++;
-	}
 	substr[i] = '\0';
 	return (substr);
 }
@@ -69,6 +72,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 //     // test6
 //     result = ft_substr(str, 12, 5);
 //     printf("Test 6: \"%s\"\n", result);
+//     free(result);
+
+// 	// test7
+//     result = ft_substr(str, 400, 5);
+//     printf("Test 7: \"%s\"\n", result);
 //     free(result);
 
 //     return (0);

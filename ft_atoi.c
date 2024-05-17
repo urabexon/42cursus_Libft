@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:06:22 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/11 21:13:48 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/17 22:02:06 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static long	ft_handle_overflow(char *str, int sign)
 	return (ret);
 }
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int		sign;
 	long	result;
@@ -55,7 +55,7 @@ int	ft_atoi(char *str)
 		sign = -1;
 		str++;
 	}
-	result = (int)ft_handle_overflow(str, sign);
+	result = (int)ft_handle_overflow((char *)str, sign);
 	return ((int)(result * sign));
 }
 

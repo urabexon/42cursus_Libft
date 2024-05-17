@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:43 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/01 17:27:29 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/17 20:37:55 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s)
+	if (!s)
+		return (NULL);
+	while (*s != (char)c)
 	{
-		if ((unsigned char)*s == (unsigned char)c)
-			return ((char *)s);
+		if (*s == '\0')
+			return (NULL);
 		s++;
 	}
-	if (c == '\0')
-		return ((char *)s);
-	return (NULL);
+	return ((char *)s);
 }
 
 // int main(void)
