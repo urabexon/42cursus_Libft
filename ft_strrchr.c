@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:08:20 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/15 21:52:57 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/17 17:08:29 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	char	*ptr;
+	int		i;
 
+	ptr = NULL;
 	i = 0;
-	if (!s)
-		return (NULL);
 	while (s[i])
-		i++;
-	while (i >= 0)
 	{
 		if (s[i] == (char)c)
-			return ((char *)(s + 1));
-		i--;
+			ptr = (char *)&s[i];
+		i++;
 	}
-	return (NULL);
+	if ((char)c == '\0')
+		return ((char *)(&s[i]));
+	return (ptr);
 }
