@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 15:31:03 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/19 15:36:06 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/19 19:28:02 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
