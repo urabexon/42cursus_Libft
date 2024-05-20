@@ -6,13 +6,13 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:06:22 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/17 22:02:06 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/20 22:33:24 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-bool	ft_isspace(int c)
+static bool	ft_isspace(int c)
 {
 	return (c == ' ' || c == '\t' || \
 	c == '\n' || c == '\r' || c == '\f' || c == '\v');
