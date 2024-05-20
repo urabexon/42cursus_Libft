@@ -6,13 +6,13 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 15:32:29 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/19 15:36:34 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/20 22:13:20 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
-{
-	
-}
+// void	ft_lstclear(t_list **lst, void (*del)(void *))
+// {
+
+// }
