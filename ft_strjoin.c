@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:55 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/13 19:46:15 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/21 21:31:35 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,20 +30,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	*str2 = '\0';
 	return (str1);
 }
-
-// int main(void) {
-//     char const *s1 = "Hello, ";
-//     char const *s2 = "world!";
-//     char *result;
-
-//     // test
-//     result = ft_strjoin(s1, s2);
-//     if (result) {
-//         printf("Test 1: %s\n", result);
-//         free(result);
-//     } else {
-//         printf("Test 1 failed to allocate memory.\n");
-//     }
-
-//     return (0);
-// }

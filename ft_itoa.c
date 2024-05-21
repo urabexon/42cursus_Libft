@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:04 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/12 21:24:15 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/21 21:40:43 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,21 +63,3 @@ char	*ft_itoa(int n)
 	ft_string(s, num, numlength - 1);
 	return (s);
 }
-
-// int main(void) {
-//     // test
-//     int test_numbers[] = {0, 1, -1, 123, -123, 2147483647, -2147483648};
-//     int num_tests = sizeof(test_numbers) / sizeof(test_numbers[0]);
-
-//     for (int i = 0; i < num_tests; i++) {
-//         char *result = ft_itoa(test_numbers[i]);
-//         if (result) {
-//             printf("ft_itoa(%d) = %s\n", test_numbers[i], result);
-//             free(result);
-//         } else {
-//             printf("failed ft_itoa(%d)\n", test_numbers[i]);
-//         }
-//     }
-
-//     return (0);
-// }

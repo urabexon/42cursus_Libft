@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:43 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/17 20:37:55 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/21 21:33:51 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return ((char *)s);
 }
-
-// int main(void)
-// {
-// 	char *s = "libft-test-tokyo";
-
-// 	printf ("ft_strchr; %s\n", ft_strchr(s, 'l' + 256));
-// 	printf ("strchr; %s\n", strchr(s, 'l' + 256));
-// 	return (0);	
-// }

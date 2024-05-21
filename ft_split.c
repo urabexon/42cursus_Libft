@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:40 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/14 21:25:19 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/21 21:35:39 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,87 +107,3 @@ char	**ft_split(char const *s, char c)
 	num_count = ft_count_words(s, c);
 	return (ft_input_word(s, c, &index, num_count));
 }
-
-// int main(void) {
-//     char **result;
-//     int i;
-
-//     // test1: "hello world this is C"
-//     result = ft_split("hello world this is C", ' ');
-//     if (result) {
-//         printf("Test 1: \"hello world this is C\" split by ' '\n");
-//         i = 0;
-//         while (result[i]) {
-//             printf("word %d: %s\n", i, result[i]);
-//             free(result[i]);
-//             i++;
-//         }
-//         free(result); 
-
-//     // test2: "   hello   world   "
-//     result = ft_split("   hello   world   ", ' ');
-//     if (result) {
-//         printf("Test 2: \"   hello   world   \" split by ' '\n");
-//         i = 0;
-//         while (result[i]) {
-//             printf("word %d: %s\n", i, result[i]);
-//             free(result[i]);
-//             i++;
-//         }
-//         free(result);
-//     }
-
-//     // test3: ""
-//     result = ft_split("", ' ');
-//     if (result) {
-//         printf("Test 3: \"\" split by ' '\n");
-//         i = 0;
-//         while (result[i]) {
-//             printf("word %d: %s\n", i, result[i]);
-//             free(result[i]);
-//             i++;
-//         }
-//         free(result);
-//     }
-
-//     // test4: NULL
-//     result = ft_split(NULL, ' ');
-//     if (result) {
-//         printf("Test 4: NULL split by ' '\n");
-//         i = 0;
-//         while (result[i]) {
-//             printf("word %d: %s\n", i, result[i]);
-//             free(result[i]);
-//             i++;
-//         }
-//         free(result);
-//     }
-
-//     // test5: "no delimiters here"
-//     result = ft_split("no delimiters here", ',');
-//     if (result) {
-//         printf("Test 5: \"no delimiters here\" split by ','\n");
-//         i = 0;
-//         while (result[i]) {
-//             printf("word %d: %s\n", i, result[i]);
-//             free(result[i]);
-//             i++;
-//         }
-//         free(result);
-//     }
-
-//     // test6: "one, two, three"
-//     result = ft_split("one, two, three", ',');
-//     if (result) {
-//         printf("Test 6: \"one, two, three\" split by ','\n");
-//         i = 0;
-//         while (result[i]) {
-//             printf("word %d: %s\n", i, result[i]);
-//             free(result[i]);
-//             i++;
-//         }
-//         free(result);
-//     }
-
-//     return (0);
-// }
