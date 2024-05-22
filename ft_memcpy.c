@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:14 by hurabe            #+#    #+#             */
-/*   Updated: 2024/05/21 21:38:14 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/05/22 18:18:08 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (!dst && !src)
+	if (!dst || !src)
 		return (dst);
 	if (dst != src)
 	{
