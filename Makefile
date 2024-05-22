@@ -6,7 +6,7 @@
 #    By: hurabe <hurabe@student.42tokyo.jp>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 13:08:39 by hurabe            #+#    #+#              #
-#    Updated: 2024/05/20 22:11:10 by hurabe           ###   ########.fr        #
+#    Updated: 2024/05/22 20:27:48 by hurabe           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,12 @@ CC		= cc
 RM		= rm -f
 
 CFLAGS	= -Wall -Wextra -Werror
+
+ifeq ($(BONUS_FLAG),yes)
+	SOURCES = $(BASIC_SRCS) $(BONUS_SRCS)
+else
+	SOURCES = $(BASIC_SRCS)
+endif
 
 # %.o:%.c
 # 	$(CC) $(CFLAGS) -c $< -o $@
