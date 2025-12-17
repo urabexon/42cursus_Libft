@@ -1,2 +1,14 @@
+# build artifacts
 a.out
 *.o
+
+# macOS
+.DS_Store
+.vscode
+
+# AI
+.cursor
+CLAUDE.md
+
+# 42
+libft.pdf
